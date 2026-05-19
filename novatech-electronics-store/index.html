@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NovaTech — Premium electronics. Smartphones, laptops, audio, and more.">
+  <title>NovaTech — Premium Electronics</title>
+  <!-- Single stylesheet — Apple-inspired design system -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-gradient">
+  <!-- Skip link: keyboard users jump to main content -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Site header: sticky glass navigation -->
+  <header class="site-header" role="banner">
+    <nav class="navbar" aria-label="Primary">
+      <a class="logo" href="index.html" aria-current="page">Nova<span>Tech</span></a>
+
+      <!-- Mobile menu toggle (checkbox + label — no JavaScript) -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Open menu" title="Menu">
+      <label class="nav-toggle-label" for="nav-toggle" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </label>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="smartphones.html">Phones</a></li>
+        <li><a href="laptops.html">Laptops</a></li>
+        <li><a href="headphones.html">Audio</a></li>
+        <li><a href="offers.html">Offers</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="compare.html" class="icon-link" aria-label="Compare products" title="Compare">⚖</a>
+        <a href="cart.html" class="icon-link" aria-label="Shopping cart" title="Cart">🛒</a>
+        <a href="login.html" class="btn btn--ghost">Sign in</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero: headline + primary CTA -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <span class="eyebrow">The future feels closer</span>
+          <h1 id="hero-title" class="hero__title">Designed for how you live.</h1>
+          <p class="hero__tagline">
+            Discover precision-built devices with breathtaking displays, all-day performance,
+            and the calm confidence of NovaTech craftsmanship.
+          </p>
+          <div class="btn-group">
+            <a class="btn btn--primary" href="products.html">Shop collection</a>
+            <a class="btn btn--ghost" href="about.html">Our story</a>
+          </div>
+        </div>
+        <div class="hero__visual" aria-hidden="true">
+          <div class="hero__bubbles"></div>
+          <div class="hero-card">
+            <!-- Placeholder hero image -->
+            <img src="https://placehold.co/640x480/141414/0071e3/png?text=NovaTech+Pro" width="640" height="480" alt="NovaTech flagship device showcase">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured products -->
+    <section class="section" aria-labelledby="featured-heading">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Featured</span>
+          <h2 id="featured-heading">Products we think you’ll love</h2>
+          <p class="text-muted">Handpicked devices with stunning design and lasting value.</p>
+        </div>
+        <div class="product-grid">
+          <!-- Product card: link covers whole card for large hit area -->
+          <article class="product-card">
+            <span class="product-card__badge">New</span>
+            <div class="product-card__image-wrap">
+              <img src="https://placehold.co/400x300/1c1c1e/A1A1A6?text=Nova+Phone+X" width="400" height="300" alt="Nova Phone X front view">
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__name">Nova Phone X</h3>
+              <p class="product-card__meta">6.7&quot; · Pro camera · All-day battery</p>
+              <p class="product-card__price">From $999</p>
+            </div>
+            <a class="product-card__link" href="smartphones.html">View Nova Phone X</a>
+          </article>
+          <article class="product-card">
+            <div class="product-card__image-wrap">
+              <img src="https://placehold.co/400x300/1c1c1e/A1A1A6?text=NovaBook+Air" width="400" height="300" alt="NovaBook Air laptop">
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__name">NovaBook Air</h3>
+              <p class="product-card__meta">Ultra-thin · M-series class speed</p>
+              <p class="product-card__price">From $1,199</p>
+            </div>
+            <a class="product-card__link" href="laptops.html">View NovaBook Air</a>
+          </article>
+          <article class="product-card">
+            <div class="product-card__image-wrap">
+              <img src="https://placehold.co/400x300/1c1c1e/A1A1A6?text=Nova+Pods+Max" width="400" height="300" alt="Nova Pods Max headphones">
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__name">Nova Pods Max</h3>
+              <p class="product-card__meta">Spatial audio · Adaptive ANC</p>
+              <p class="product-card__price">$549</p>
+            </div>
+            <a class="product-card__link" href="headphones.html">View Nova Pods Max</a>
+          </article>
+          <article class="product-card">
+            <span class="product-card__badge">Limited</span>
+            <div class="product-card__image-wrap">
+              <img src="https://placehold.co/400x300/1c1c1e/A1A1A6?text=Nova+Watch+Ultra" width="400" height="300" alt="Nova Watch Ultra">
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__name">Nova Watch Ultra</h3>
+              <p class="product-card__meta">Titanium · Dive ready · Precision GPS</p>
+              <p class="product-card__price">$799</p>
+            </div>
+            <a class="product-card__link" href="watches.html">View Nova Watch Ultra</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="section section--tight" aria-labelledby="categories-heading">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Browse</span>
+          <h2 id="categories-heading">Categories</h2>
+          <p class="text-muted">Find your next favorite in curated collections.</p>
+        </div>
+        <div class="category-grid">
+          <a class="category-tile" href="smartphones.html">
+            <img class="category-tile__bg" src="https://placehold.co/600x400/003d82/ffffff?text=" alt="" width="600" height="400">
+            <h3>Smartphones</h3>
+            <p>Beautiful screens. Pro cameras.</p>
+          </a>
+          <a class="category-tile" href="laptops.html">
+            <img class="category-tile__bg" src="https://placehold.co/600x400/141414/d2d2d7?text=" alt="" width="600" height="400">
+            <h3>Laptops</h3>
+            <p>Power that disappears in your bag.</p>
+          </a>
+          <a class="category-tile" href="gaming.html">
+            <img class="category-tile__bg" src="https://placehold.co/600x400/0071e3/ffffff?text=" alt="" width="600" height="400">
+            <h3>Gaming</h3>
+            <p>High refresh. Low latency.</p>
+          </a>
+          <a class="category-tile" href="headphones.html">
+            <img class="category-tile__bg" src="https://placehold.co/600x400/1a1a1a/A1A1A6?text=" alt="" width="600" height="400">
+            <h3>Headphones</h3>
+            <p>Silence when you want it.</p>
+          </a>
+          <a class="category-tile" href="watches.html">
+            <img class="category-tile__bg" src="https://placehold.co/600x400/0a0a0a/f5f5f7?text=" alt="" width="600" height="400">
+            <h3>Watches</h3>
+            <p>Health, fitness, and time.</p>
+          </a>
+          <a class="category-tile" href="products.html">
+            <img class="category-tile__bg" src="https://placehold.co/600x400/003d82/ffffff?text=" alt="" width="600" height="400">
+            <h3>All products</h3>
+            <p>See everything in one place.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Latest launches -->
+    <section class="section" aria-labelledby="launches-heading">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">New</span>
+          <h2 id="launches-heading">Latest launches</h2>
+          <p class="text-muted">Fresh arrivals engineered for clarity and speed.</p>
+        </div>
+        <div class="product-grid">
+          <article class="product-card">
+            <span class="product-card__badge">Launch</span>
+            <div class="product-card__image-wrap">
+              <img src="https://placehold.co/400x300/141414/0071e3?text=Nova+Pad+Pro" width="400" height="300" alt="Nova Pad Pro tablet">
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__name">Nova Pad Pro</h3>
+              <p class="product-card__meta">Liquid canvas · Pro accessory support</p>
+              <p class="product-card__price">From $899</p>
+            </div>
+            <a class="product-card__link" href="products.html">View Nova Pad Pro</a>
+          </article>
+          <article class="product-card">
+            <div class="product-card__image-wrap">
+              <img src="https://placehold.co/400x300/1c1c1e/f5f5f7?text=Nova+Studio+Mic" width="400" height="300" alt="Nova Studio Mic">
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__name">Nova Studio Mic</h3>
+              <p class="product-card__meta">Podcast clarity · Plug and record</p>
+              <p class="product-card__price">$199</p>
+            </div>
+            <a class="product-card__link" href="products.html">View Nova Studio Mic</a>
+          </article>
+          <article class="product-card">
+            <div class="product-card__image-wrap">
+              <img src="https://placehold.co/400x300/141414/A1A1A6?text=Nova+Dock" width="400" height="300" alt="Nova Dock hub">
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__name">Nova Dock</h3>
+              <p class="product-card__meta">One cable. Every port you need.</p>
+              <p class="product-card__price">$279</p>
+            </div>
+            <a class="product-card__link" href="products.html">View Nova Dock</a>
+          </article>
+          <article class="product-card">
+            <div class="product-card__image-wrap">
+              <img src="https://placehold.co/400x300/0a0a0a/0071e3?text=Nova+VR+One" width="400" height="300" alt="Nova VR One headset">
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__name">Nova VR One</h3>
+              <p class="product-card__meta">4K per eye · Featherlight fit</p>
+              <p class="product-card__price">$1,499</p>
+            </div>
+            <a class="product-card__link" href="gaming.html">View Nova VR One</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section section--tight" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Community</span>
+          <h2 id="testimonials-heading">What our customers say</h2>
+          <p class="text-muted">Real stories from people who expect the exceptional.</p>
+        </div>
+        <div class="testimonial-grid">
+          <blockquote class="testimonial-card">
+            <p>“The Nova Phone feels like holding the future. Fast, calm, and impossibly refined.”</p>
+            <cite>— Maya Chen, Product designer</cite>
+          </blockquote>
+          <blockquote class="testimonial-card">
+            <p>“Pods Max replaced my studio monitors for travel. The spatial mix is uncanny.”</p>
+            <cite>— Jordan Blake, Audio engineer</cite>
+          </blockquote>
+          <blockquote class="testimonial-card">
+            <p>“NovaBook Air has been my daily driver for a year. Silent, light, and relentless.”</p>
+            <cite>— Sam Rivera, Developer</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="section" aria-labelledby="newsletter-heading">
+      <div class="container">
+        <div class="newsletter" role="region" aria-labelledby="newsletter-heading">
+          <div>
+            <h2 id="newsletter-heading" class="newsletter__title">Stay in the loop</h2>
+            <p class="text-muted newsletter__lead">Product drops, tips, and member-only offers — no clutter.</p>
+          </div>
+          <!-- GET + # — static demo form (no backend) -->
+          <form class="newsletter-form" action="#" method="get">
+            <label for="newsletter-email" class="visually-hidden">Email address</label>
+            <input type="email" id="newsletter-email" name="email" placeholder="you@email.com" required autocomplete="email">
+            <button type="submit" class="btn btn--primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site footer: links + legal -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <p class="logo" style="margin-bottom: 0.75rem;">Nova<span>Tech</span></p>
+          <p>Premium electronics with thoughtful design, transparent quality, and support that shows up.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="products.html">All products</a></li>
+            <li><a href="offers.html">Offers</a></li>
+            <li><a href="compare.html">Compare</a></li>
+            <li><a href="cart.html">Cart</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Categories</h4>
+          <ul>
+            <li><a href="smartphones.html">Smartphones</a></li>
+            <li><a href="laptops.html">Laptops</a></li>
+            <li><a href="headphones.html">Headphones</a></li>
+            <li><a href="watches.html">Watches</a></li>
+            <li><a href="gaming.html">Gaming</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Sign in</a></li>
+            <li><a href="signup.html">Create account</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span>2026</span> NovaTech. All rights reserved.</p>
+        <div class="social-links">
+          <a href="#" aria-label="NovaTech on social (placeholder)">Social</a>
+          <a href="#" aria-label="Support (placeholder)">Support</a>
+          <a href="#" aria-label="Terms (placeholder)">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

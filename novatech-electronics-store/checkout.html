@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Secure checkout for your NovaTech order (demo form).">
+  <title>Checkout — NovaTech</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-gradient">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <nav class="navbar" aria-label="Primary">
+      <a class="logo" href="index.html">Nova<span>Tech</span></a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Open menu" title="Menu">
+      <label class="nav-toggle-label" for="nav-toggle" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </label>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="smartphones.html">Phones</a></li>
+        <li><a href="laptops.html">Laptops</a></li>
+        <li><a href="headphones.html">Audio</a></li>
+        <li><a href="offers.html">Offers</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="compare.html" class="icon-link" title="Compare">⚖</a>
+        <a href="cart.html" class="icon-link" title="Cart">🛒</a>
+        <a href="login.html" class="btn btn--ghost">Sign in</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Secure</span>
+        <h1>Checkout</h1>
+        <p class="text-muted">Demo checkout form — submit goes nowhere meaningful without a backend.</p>
+      </div>
+    </section>
+
+    <section class="section section--tight" aria-label="Checkout form">
+      <div class="container">
+        <!-- Form uses GET + # so refresh stays safe for static hosting -->
+        <form class="form-panel" action="#" method="get">
+          <h2 class="text-center" style="font-size: 1.35rem; margin-bottom: 1rem;">Contact</h2>
+          <div class="form-row form-row--inline">
+            <div>
+              <label for="first">First name</label>
+              <input type="text" id="first" name="first" autocomplete="given-name" required>
+            </div>
+            <div>
+              <label for="last">Last name</label>
+              <input type="text" id="last" name="last" autocomplete="family-name" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+          </div>
+          <div class="form-row">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel">
+          </div>
+
+          <h2 class="text-center" style="font-size: 1.35rem; margin: 1.5rem 0 1rem;">Shipping</h2>
+          <div class="form-row">
+            <label for="address">Street address</label>
+            <input type="text" id="address" name="address" autocomplete="street-address" required>
+          </div>
+          <div class="form-row form-row--inline">
+            <div>
+              <label for="city">City</label>
+              <input type="text" id="city" name="city" autocomplete="address-level2" required>
+            </div>
+            <div>
+              <label for="zip">Postal code</label>
+              <input type="text" id="zip" name="zip" autocomplete="postal-code" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <label for="country">Country</label>
+            <select id="country" name="country" autocomplete="country-name">
+              <option value="">Select</option>
+              <option>United States</option>
+              <option>India</option>
+              <option>United Kingdom</option>
+              <option>Canada</option>
+            </select>
+          </div>
+
+          <h2 class="text-center" style="font-size: 1.35rem; margin: 1.5rem 0 1rem;">Payment <span class="text-muted" style="font-size: 13px;">(demo)</span></h2>
+          <div class="form-row">
+            <label for="cardname">Name on card</label>
+            <input type="text" id="cardname" name="cardname" autocomplete="cc-name">
+          </div>
+          <div class="form-row">
+            <label for="cardnum">Card number</label>
+            <input type="text" id="cardnum" name="cardnum" inputmode="numeric" autocomplete="cc-number" placeholder="•••• •••• •••• ••••">
+          </div>
+          <div class="form-row form-row--inline">
+            <div>
+              <label for="exp">Expiry</label>
+              <input type="text" id="exp" name="exp" autocomplete="cc-exp" placeholder="MM/YY">
+            </div>
+            <div>
+              <label for="cvc">CVC</label>
+              <input type="text" id="cvc" name="cvc" autocomplete="cc-csc" placeholder="•••">
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--block" style="margin-top: 1rem;">Place order</button>
+          <p class="form-footer">By placing your order, you agree to our demo terms. <a href="cart.html">Back to cart</a></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <p class="logo" style="margin-bottom: 0.75rem;">Nova<span>Tech</span></p>
+          <p>Premium electronics with thoughtful design and support you can rely on.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="products.html">All products</a></li>
+            <li><a href="offers.html">Offers</a></li>
+            <li><a href="compare.html">Compare</a></li>
+            <li><a href="cart.html">Cart</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Categories</h4>
+          <ul>
+            <li><a href="smartphones.html">Smartphones</a></li>
+            <li><a href="laptops.html">Laptops</a></li>
+            <li><a href="headphones.html">Headphones</a></li>
+            <li><a href="watches.html">Watches</a></li>
+            <li><a href="gaming.html">Gaming</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Sign in</a></li>
+            <li><a href="signup.html">Create account</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 NovaTech. All rights reserved.</p>
+        <div class="social-links"><a href="#">Support</a><a href="#">Terms</a></div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
