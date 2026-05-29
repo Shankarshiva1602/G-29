@@ -1,7 +1,13 @@
 TEAM NAME:G-29
+
 PROJECT TITLE:novatech-electronics-store
+
 TEAM LEADER (MEMBER 1):Shivashankar Rao.N {USN : 2102508125}
+
 MEMBER 2 : Shashank N {USN : 2082508332}
+
 MEMBER 3 : Sai Bhuvan P {USN : 2082508305}
+
 MEMBER 4 : Shashank.C {USN : 2082508330}
+
 MEMBER 5 : Rudresh S {USN : 2082508297}
